@@ -1,0 +1,7 @@
+{% extends "main.html" %}
+
+{% block content %}
+<a href="{% url 'list' %}">Go back </a>
+<h2>Task: {{object}} <br><br> {{object.description }}</h2>
+
+{% endblock %}
