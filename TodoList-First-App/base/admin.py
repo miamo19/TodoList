@@ -8,4 +8,6 @@ from .models import Task
 
 @dmin.register(Task)
 class AdminTask(admin.ModelAdmin):
-  display_list = ['user', 'title', 'created', 'complete')
+   list_display = ('user', 'title', 'created','complete')
+   list_filter = ("created",)
+   search_fields = ['title',]
