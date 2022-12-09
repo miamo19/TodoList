@@ -6,3 +6,6 @@ from .models import Task
 
 # Or 👇👇 do it as shown below
 
+@dmin.register(Task)
+class AdminTask(admin.ModelAdmin):
+  pass
