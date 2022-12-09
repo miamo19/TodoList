@@ -8,4 +8,4 @@ from .models import Task
 
 @dmin.register(Task)
 class AdminTask(admin.ModelAdmin):
-  pass
+  dixplay_list = ['user', 'title', 'completed', 'created')
