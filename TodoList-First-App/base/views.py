@@ -1,3 +1,4 @@
+#from django
 from django.shortcuts import redirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
@@ -10,6 +11,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
+#from Project
 from .models import Task
 
 class CustomerLoginView(LoginView):
