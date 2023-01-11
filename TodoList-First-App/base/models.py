@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Task(models.Model):
+    """
+    name: Task
+    description: this model keep record of task 
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=150, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
