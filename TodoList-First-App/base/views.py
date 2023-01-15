@@ -28,8 +28,8 @@ class CustomerLoginView(LoginView):
 
 class RegisterPage(FormView):
     """ 
-    name: CustomerLoginView
-    descrption: class for login
+    name:  RegisterPage
+    descrption: class for Registrating
     """
     template_name = "base/register.html"
     form_class = UserCreationForm
