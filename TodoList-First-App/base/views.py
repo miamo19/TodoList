@@ -15,6 +15,10 @@ from django.contrib.auth import login
 from .models import Task
 
 class CustomerLoginView(LoginView):
+    """ 
+    name: CustomerLoginView
+    descrption: class for login
+    """
     template_name = "base/login.html"
     fields = '__all__'
     redirect_authenticated_user = True
