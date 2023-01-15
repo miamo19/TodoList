@@ -27,6 +27,10 @@ class CustomerLoginView(LoginView):
         return reverse_lazy('list')
 
 class RegisterPage(FormView):
+    """ 
+    name: CustomerLoginView
+    descrption: class for login
+    """
     template_name = "base/register.html"
     form_class = UserCreationForm
     redirect_authenticated_user = True
