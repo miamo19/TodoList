@@ -78,6 +78,10 @@ class TaskDetail(LoginRequiredMixin, DetailView):
 
 
 class TaskCreate(LoginRequiredMixin, CreateView):
+    """ 
+    name: TaskCreate
+    descrption: This class permit to create a task
+    """
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy("list")
