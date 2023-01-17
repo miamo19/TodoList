@@ -50,6 +50,10 @@ class RegisterPage(FormView):
 
 # Create your views here.
 class TaskList(LoginRequiredMixin, ListView):
+    """ 
+    name: TaskList
+    descrption: This class permit the listing out the different tasks
+    """
     model = Task
     context_object_name = "tasks"
 
