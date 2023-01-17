@@ -70,6 +70,10 @@ class TaskList(LoginRequiredMixin, ListView):
         return context
 
 class TaskDetail(LoginRequiredMixin, DetailView):
+    """ 
+    name: TaskDetail
+    descrption: This class give detail on a particular task
+    """
     model = Task
 
 
