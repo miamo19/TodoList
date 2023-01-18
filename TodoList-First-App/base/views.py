@@ -100,6 +100,10 @@ class TaskUpdate(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy("list")
 
 class TaskDelete(DeleteView):
+    """ 
+    name: TaskDelete
+    descrption: This class permit to delete a particular task
+    """
     model = Task
     context_object_name = "tasks"
     success_url = reverse_lazy("list")
