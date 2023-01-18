@@ -91,6 +91,10 @@ class TaskCreate(LoginRequiredMixin, CreateView):
         return super(TaskCreate, self).form_valid(form)
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
+     """ 
+    name: TaskUpdate
+    descrption: This class permit to update a particular task
+    """
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy("list")
