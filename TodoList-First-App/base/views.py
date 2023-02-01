@@ -10,7 +10,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
 #from Project
-from .models import Task
+from . models import Task
 
 class CustomerLoginView(LoginView):
     """ 
