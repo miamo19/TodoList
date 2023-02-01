@@ -34,7 +34,7 @@ class RegisterPage(FormView):
     redirect_authenticated_user = True
     success_url = reverse_lazy("list")
 
-#to save the form and authenticate the user
+
     def form_valid(self, form):
         user = form.save()
         if user is not None:
@@ -46,7 +46,7 @@ class RegisterPage(FormView):
             return redirect('list')
         return super(RegisterPage, self).get(*args, **kwargs)
 
-# Create your views here.
+
 class TaskList(LoginRequiredMixin, ListView):
     """ 
     name: TaskList
