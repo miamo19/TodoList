@@ -27,7 +27,7 @@ class CustomerLoginView(LoginView):
 class RegisterPage(FormView):
     """ 
     name:  RegisterPage
-    descrption: class for Registrating
+    descrption: class for Registrating users
     """
     template_name = "base/register.html"
     form_class = UserCreationForm
@@ -78,7 +78,7 @@ class TaskDetail(LoginRequiredMixin, DetailView):
 class TaskCreate(LoginRequiredMixin, CreateView):
     """ 
     name: TaskCreate
-    descrption: This class permit to create a task
+    descrption: This class permit to create a personal task
     """
     model = Task
     fields = ['title', 'description', 'complete']
