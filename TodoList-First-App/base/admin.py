@@ -1,4 +1,7 @@
+#from django
 from django.contrib import admin
+
+#from project
 from .models import Task
 
 # Register your models here.
